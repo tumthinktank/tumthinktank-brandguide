@@ -1,0 +1,1 @@
+Welcome to the Interactive Things brand guidelines. This documentation offers the fundamental principles behind our brand and the necessary assets to implement it in your projects. Please consider these guidelines a living document that will evolve as we continue to develop the tenets and specifics of our brand design.
