@@ -6,25 +6,30 @@ import SignetAnimation from "./components/SignetAnimation";
 const pages = [
   {
     path: "/",
+    title: "Introduction",
+    content: pageLoader(() => import("./pages/introduction.md")),
+  },
+  {
+    path: "/",
     title: "Brand elements",
     pages: [
       {
-        path: "/",
+        path: "/logotype",
         title: "Logotype",
-        content: pageLoader(() => import("./pages/logotype.md"))
+        content: pageLoader(() => import("./pages/logotype.md")),
       },
       {
         path: "/signet",
         title: "Signet",
         content: pageLoader(() => import("./pages/signet.md")),
-        imports: {SignetAnimation: SignetAnimation}
+        imports: { SignetAnimation: SignetAnimation },
       },
       {
         path: "/alphabet",
         title: "Alphabet",
-        content: pageLoader(() => import("./pages/alphabet.md"))
+        content: pageLoader(() => import("./pages/alphabet.md")),
       },
-    ]
+    ],
   },
   {
     path: "/colours",
@@ -33,15 +38,36 @@ const pages = [
       {
         path: "/colours",
         title: "Colours",
-        content: pageLoader(() => import("./pages/colours.md"))
+        content: pageLoader(() => import("./pages/colours.md")),
       },
       {
         path: "/images",
         title: "Images",
-        content: pageLoader(() => import("./pages/images.md"))
+        content: pageLoader(() => import("./pages/images.md")),
       },
-    ]
-  }
+    ],
+  },
+  {
+    path: "/contentTypes",
+    title: "Website",
+    pages: [
+      {
+        path: "/contentTypes",
+        title: "Content types",
+        content: pageLoader(() => import("./pages/contentTypes.md")),
+      },
+      {
+        path: "/images",
+        title: "Images",
+        content: pageLoader(() => import("./pages/images.md")),
+      },
+    ],
+  },
+  {
+    path: "/todo",
+    title: "To Do",
+    content: pageLoader(() => import("./pages/todo.md")),
+  },
 ];
 
 const theme = {
@@ -88,7 +114,7 @@ const theme = {
     script: { color: "#3F7397" },
     function: { color: "#FF5555" },
     keyword: { color: "#3F7397" },
-    string: { color: "#00263E" }
+    string: { color: "#00263E" },
   },
 
   // Patterns
@@ -106,12 +132,12 @@ const theme = {
   baseFontSize: 15,
 
   // Modular scale ratio that is used to figure out all the different font sizes
-  msRatio: 1.2
-}
+  msRatio: 1.2,
+};
 
 ReactDOM.render(
-  <Catalog 
-    title="TUM Think Tank · Brand Guidelines" 
+  <Catalog
+    title="TUM Think Tank · Brand Guidelines"
     pages={pages}
     logoSrc="logotype/TUMThinkTank-Logotype-pos.png"
     theme={theme}

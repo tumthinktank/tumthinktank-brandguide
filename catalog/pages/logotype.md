@@ -1,6 +1,4 @@
 
-Welcome to the Interactive Things brand guidelines. This documentation offers the fundamental principles behind our brand and the necessary assets to implement it in your projects. Please consider these guidelines a living document that will evolve as we continue to develop the tenets and specifics of our brand design.
-
 ```image
 src: logotype/TUMThinkTank-Logotype-pos.png
 plain: true
@@ -70,7 +68,7 @@ plain: true
 ```
 
 ```hint|directive
-Images shared on social media channels and the website of the Think Tank do not include any logos.
+Images shared on social media channels and the website of the Think Tank do **not** include any logos.
 ```
 
 ### External usage
