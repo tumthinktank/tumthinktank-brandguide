@@ -57,9 +57,9 @@ const pages = [
         content: pageLoader(() => import("./pages/contentTypes.md")),
       },
       {
-        path: "/images",
-        title: "Images",
-        content: pageLoader(() => import("./pages/images.md")),
+        path: "/events",
+        title: "Event cheat sheet",
+        content: pageLoader(() => import("./pages/events.md")),
       },
     ],
   },
