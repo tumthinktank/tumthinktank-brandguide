@@ -5,7 +5,6 @@ The activities of the TUM Think tank are differenciated on the website amongst 5
 - Training
 - News
 - Project output
-- test
 
 ## Projects
 
